@@ -1,0 +1,371 @@
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<style type="text/css">
+   /*span {*/
+   /*   background-image:url(./resources/LASS.png);*/
+   /*   background-repeat: no-repeat;*/
+   /*   background-size: 100%, 100%;*/
+   /*   background-attachment: fixed;*/
+   .exp-title {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px 0 25px;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+   /*}*/
+   p {
+   line-height:30px;
+   text-align: justify;
+   }
+   body {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight:300;
+   font-size:18px;
+   margin-left: auto;
+   margin-right: auto;
+   width: 1500px;
+   }
+   h1 {
+   font-size:32px;
+   font-weight:300;
+   }
+   .disclaimerbox {
+   background-color: #eee;
+   border: 1px solid #eeeeee;
+   border-radius: 10px ;
+   -moz-border-radius: 10px ;
+   -webkit-border-radius: 10px ;
+   padding: 20px;
+   }
+   video.header-vid {
+   height: 140px;
+   border: 1px solid black;
+   border-radius: 10px ;
+   -moz-border-radius: 10px ;
+   -webkit-border-radius: 10px ;
+   }
+   audio {
+   width: 280px;
+   }
+   table {
+   display: table;
+   border-collapse: separate;
+   border-spacing:20px 10px;
+   }
+   img.header-img {
+   height: 120px;
+   border: 1px solid black;
+   border-radius: 10px ;
+   -moz-border-radius: 10px ;
+   -webkit-border-radius: 10px ;
+   }
+   img.rounded {
+   border: 1px solid #eeeeee;
+   border-radius: 10px ;
+   -moz-border-radius: 10px ;
+   -webkit-border-radius: 10px ;
+   }
+   a:link,a:visited
+   {
+   color: #1367a7;
+   text-decoration: none;
+   }
+   a:hover {
+   color: #208799;
+   }
+   td.dl-link {
+   height: 160px;
+   text-align: center;
+   /*text-align: justify;*/
+   /*justify-content: space-around;*/
+   font-size: 22px;
+   }
+   .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+   box-shadow:
+   0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+   5px 5px 0 0px #fff, /* The second layer */
+   5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+   10px 10px 0 0px #fff, /* The third layer */
+   10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+   15px 15px 0 0px #fff, /* The fourth layer */
+   15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+   20px 20px 0 0px #fff, /* The fifth layer */
+   20px 20px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+   /*25px 25px 0 0px #fff, !* The fifth layer *!*/
+   /*25px 25px 1px 1px rgba(0,0,0,0.35); !* The fifth layer shadow *!*/
+   margin-left: 10px;
+   margin-right: 45px;
+   }
+   .paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+   box-shadow:
+   0px 0px 1px 1px rgba(0,0,0,0.35); /* The top layer shadow */
+   margin-left: 10px;
+   margin-right: 45px;
+   }
+   .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+   box-shadow:
+   0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+   5px 5px 0 0px #fff, /* The second layer */
+   5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+   10px 10px 0 0px #fff, /* The third layer */
+   10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+   margin-top: 5px;
+   margin-left: 10px;
+   margin-right: 30px;
+   margin-bottom: 5px;
+   }
+   .vert-cent {
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+   }
+   hr
+   {
+   border: 0;
+   height: 1px;
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+   }
+</style>
+<html>
+   <head>
+      <title>Multimodal Fish Feeding Intensity Assessment in Aquaculture</title>
+      <meta property="og:image" content="Path to my teaser.png"/>
+      <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
+      <meta property="og:title" content="FFIA DemoPage." />
+      <meta property="og:description" content="Multimodal Fish Feeding Intensity Assessment in Aquaculture" />
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+      <!-- Get from Google Analytics -->
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+   </head>
+	 <style>
+	    .left-align{
+		text-align:left;
+		}
+		span{
+			font-size: 35px;
+			color: black;
+			font-style: normal;
+			font-family: georgian;
+		}
+		div{
+			font-size: 100px;
+			color: yellow;
+			margin: auto;
+			width: 900px;
+		}
+			
+		body {
+			background-color:  #f5f5f5;
+
+		}
+		#content {
+
+			// border: solid black; /*设置边框样式跟颜色*/
+
+			margin: 0 auto; /*设置div居中*/
+
+			width: 200px; /*设置div宽度*/
+
+			height: 200px; /*设置div高度*/
+
+			border-width: 5px; /*设置边框宽度*/
+
+			background: #ff0; /*设置背景色*/
+
+		}
+	</style>
+	</style>
+ 
+   <body>
+	    <div id="header">
+
+    </div>
+      <br><br><br>
+      <center>
+         <span style="font-size:50px; color:black;"><b>Multimodal Fish Feeding Intensity Assessment in Aquaculture 
+		 </span>
+         <br>
+         <br><br>
+         <br>
+         
+		<table align=center width=1200px>
+				<tr>
+					<td align=center>
+								  <span style="font-size:25px; color:black">
+									<a href="https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=N4D2G5sAAAAJ">Meng Cui</a><sup>1</sup>,
+									  <a href="https://scholar.google.com/citations?user=-OlNYSgAAAAJ&hl">Xubo Liu</a><sup>1</sup>,
+									  <a href="https://scholar.google.com/citations?user=g3O4lJMAAAAJ&hl=zh-CN&oi=ao">Haohe Liu</a><sup>1</sup>,									  
+									  <a href="https://www.researchgate.net/profile/Zhuangzhuang-Du">Zhuangzhuang Du</a><sup>2</sup>,
+									  <a href="https://scholar.google.com/citations?user=nJjX5nIAAAAJ&hl=zh-CN">Tao Chen</a><sup>3</sup>,
+									  <a href="https://scholar.google.com/citations?user=HUlagW8AAAAJ&hl=zh-CN">Guoping Lian</a><sup>3</sup>,
+									  <a href="https://scholar.google.com/citations?user=AVy-dSgAAAAJ&hl=zh-CN">Daoliang Li</a><sup>2</sup>,
+									  <a href="https://scholar.google.com/citations?user=JQFnV5IAAAAJ&hl=zh-CN">Wenwu Wang</a><sup>1</sup>
+								  </span>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" >
+					<br><br>
+					  <span style="font-size:22px; color: black; font-family: georgian;">
+						  <sup>1</sup>The Centre for Vision, Speech
+and Signal Processing (CVSSP), University of Surrey, Guildford GU2 7XH,
+UK, <sup>2</sup>The National Innovation Center for Digital Fishery, China Agricultural University, China, </br><sup>3</sup>The Department of Chemical and Process
+Engineering, University of Surrey, Guilford GU2 7XH, UK. <br>
+						  
+					  </span>
+						<br>
+						<br>
+					</td>
+				</tr>
+			</table>		 
+
+      </center>	  
+      <br>
+      <table align=center width=500px>
+			<center>
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2309.05058"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fa fa-file-text" aria-hidden="true"></i>
+                  </span>
+                  <span style="font-size:22px; color: black; font-family: georgian;"><b>Paper</b></span>
+                </a>
+				
+
+              </span>
+			  &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+			  &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/FishMaster93/U-FFIA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span style="font-size:22px; color: black; font-family: georgian;"><b>Code</b></span>
+                  </a>
+              </span>
+              &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+              <span class="link-block">
+               <a href="https://zenodo.org/records/11059975"
+                  class="external-link button is-normal is-rounded is-dark">
+                 <span class="icon">
+                     <i class="fa fa-rocket"></i>
+                 </span>
+                 <span style="font-size:22px; color: black; font-family: georgian;"><b>Dataset</b></span>
+                 </a>
+             </span>
+   
+				
+            
+            
+            
+            
+            </center>			  
+         </tr>
+      </table>
+      <br>
+      
+      <br><br>
+      <hr><br><br>
+      <table align=center width=1200px>
+         <center>
+            <h1 style="font-size:35px; color:black">Abstract</h1>
+         </center>
+         <tr>
+            <td>
+               <p style="font-size:22px; color:black; width:1200px; font-family: georgian;">
+Fish feeding intensity assessment (FFIA) aims to evaluate fish appetite changes during feeding, which is crucial in industrial aquaculture applications. Existing FFIA methods are limited by their robustness to noise, computational complexity, and the lack of public datasets for developing the models. To address these issues, we first introduce AV-FFIA, a new dataset containing 27,000 labeled audio and video clips that capture different levels of fish feeding intensity. Then, we introduce multi-modal approaches for FFIA by leveraging the models pre-trained on individual modalities and fused with data fusion methods. We perform benchmark studies of these methods on AV-FFIA, and demonstrate the advantages of the multi-modal approach over the single-modality based approach, especially in noisy environments. However, compared to the methods developed for individual modalities, the multimodal approaches may involve higher computational costs due to the need for independent encoders for each modality. To overcome this issue, we further present a novel unified mixed-modality based method for FFIA, termed as U-FFIA. U-FFIA is a single model capable of processing audio, visual, or audio-visual modalities, by leveraging modality dropout during training and knowledge distillation using the models pre-trained with data from single modality. We demonstrate that U-FFIA can achieve performance better than or on par with the state-of-the-art modality-specific FFIA models, with significantly lower computational overhead, enabling robust and efficient FFIA for improved aquaculture management.            </td>
+         </tr>
+      </table>
+      <br>
+      <hr><br><br>
+
+      <table align=center width=1200px>
+         <center>
+            <h1 style="color:black; font-size:35px;">Scenario 1: The Fish Feeeding Machine Working in Factory</h1>
+         </center>
+         <tr>
+            <td>
+				<p style="font-size:20px; color:black; width:1200px; font-family: georgian;"><b>Note to Practitioners</b>: Feeding is one of the most important costs in aquaculture. However, current feeding machines usually operate with fixed thresholds or human experiences, lacking the ability to automatically adjust to fish feeding intensity. FFIA can evaluate the intensity changes in fish appetite during the feeding process and optimize the control strategies of the feeding machine to avoid inadequate feeding or overfeeding, thereby reducing the feeding cost and improving the well-being of fish
+in industrial aquaculture.
+               </p>
+                <div style="text-align: center;">
+					<video src="./sci-fi/The_Fish_Feeding_Machine.mp4" controls width="853" height="480" poster="./sci-fi/FFIA.png"> 
+					</video>
+                </div>
+            </td>
+        </tr>
+      </table>
+      <br><br>
+      <hr><br><br>
+		<table align=center width=1200px>
+		  <center>
+			<h1 style="color:black; font-size:35px">Scenario 2: Difference Fish Feeding Intensity in Aquaculture</h1>
+		  </center>
+		  <tr>
+			<td>
+			  <p style="font-size:20px; color:black; width:1200px; font-family: georgian;"><b>Four Different FFIA</b>: The video frames show a clear relationship between the feeding intensity and the degree of fish aggregation, with higher intensity leading to denser fish grouping. Moreover, the continuous video footage reveals that the fish swimming speed and feeding activity increase with higher feeding intensity</p>
+			  <div style="display: flex; justify-content: space-between; width: 100%;">
+				<figure style="margin: 0; text-align: center;">
+				  <video src="./FFIA/Strong.mp4" controls width="260" height="140" poster="./FFIA/strong.png"></video>
+				  <figcaption style="font-size: 16px; margin-top: 5px; color: black; font-weight: bold;">(a) Fish Feeding Intensity: Strong</figcaption>
+				</figure>
+				<figure style="margin: 0; text-align: center;">
+				  <video src="./FFIA/Medium.mp4" controls width="260" height="140" poster="./FFIA/medium.png"></video>
+				  <figcaption style="font-size: 16px; margin-top: 5px; color: black; font-weight: bold;">(b) Fish Feeding Intensity: Medium</figcaption>
+				</figure>
+				<figure style="margin: 0; text-align: center;">
+				  <video src="./FFIA/Weak.mp4" controls width="260" height="140" poster="./FFIA/weak.png"></video>
+				  <figcaption style="font-size: 16px; margin-top: 5px; color: black; font-weight: bold;">(c) Fish Feeding Intensity: Weak</figcaption>
+				</figure>
+				<figure style="margin: 0; text-align: center;">
+				  <video src="./FFIA/None.mp4" controls width="260" height="140" poster="./FFIA/None.png"></video>
+				  <figcaption style="font-size: 16px; margin-top: 5px; color: black; font-weight: bold;">(d) Fish Feeding Intensity: None</figcaption>
+				</figure>
+			  </div>
+			</td>
+		  </tr>
+		</table>
+      <br><br>
+
+
+
+      <hr>	  
+      <br><br>
+      <table align=center width=1200px>
+         <tr>
+            <td width=1200px>
+               
+                  <center>
+                     <h1 style="color:black; font-size:40px">Acknowledgements</h1>
+                  </center>
+                  <p style="font-size:20px; color:black; width:1200px; font-family: georgian;">
+					This work was supported by the National Natural Science Foundation of China ''Dynamic regulation mechanism of nitrogen in industrial aquaponics under the condition of asynchronous life cycle'' [Grant no. 32373186], Digital Fishery Cross-Innovative Talent Training Program of the China Scholarship Council (DF-Project) and a Research Scholarship from the China Scholarship Council. Ethics approval for this study was obtained from the Welfare and Ethical Committee of China Agricultural University (Ref: AW30901202-5-1). For the purpose of open access, the authors have applied a Creative Commons Attribution (CC BY) licence to any author-accepted manuscript version arising.
+                  </p>
+               
+            </td>
+         </tr>
+      </table>
+      <br>
+
+
+      
+       
+       
+	  
+   </body>
+</html>
+</table>
+
+
