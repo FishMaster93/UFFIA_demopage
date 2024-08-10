@@ -132,6 +132,26 @@
    height: 1px;
    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
    }
+        #visitorCounter {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #visitorCounter p {
+            display: inline-block;
+            margin: 0;
+        }
+        #visitorCounter i {
+            margin-right: 20px;
+            color: #1367a7;
+        }
+		#visitorCount {
+    font-size: 20px; /* Smaller font size for the number */
+}
+   
 </style>
 <html>
    <head>
@@ -378,8 +398,31 @@ in industrial aquaculture.
          </tr>
       </table>
       <br>
+<hr>
+<div id="visitorCounter">
+    <p style="font-size:20px; color:black; font-family: georgian;">
+        <i class="fas fa-users"></i> Visitor: <span id="visitorCount">0</span>
+    </p>
+</div>
 
-
+    <script>
+        // Check if localStorage is supported
+        if (typeof(Storage) !== "undefined") {
+            // Get the current count (or initialize to 0 if it doesn't exist)
+            let count = localStorage.getItem('visitorCount') || 0;
+            
+            // Increment the count
+            count++;
+            
+            // Update the count in localStorage
+            localStorage.setItem('visitorCount', count);
+            
+            // Display the count on the page
+            document.getElementById('visitorCount').textContent = count;
+        } else {
+            document.getElementById('visitorCount').textContent = "Sorry, your browser does not support web storage...";
+        }
+    </script>
       
        
        
